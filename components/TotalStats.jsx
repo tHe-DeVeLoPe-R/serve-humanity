@@ -20,7 +20,7 @@ export default function TotalStats() {
     return (
         <div className={`${isMobile ? styles.mobile_stats_main : styles.stats_main}`}>
             <br />
-            <h1>Our Performance Stats</h1> <br />
+           {isMobile ?  <h1>Our Performance</h1>  :  <h1>Our Performance Stats</h1> }<br />
             <p>
             Our team is driven by dedicated individuals who work tirelessly to bring positive change to society. Alongside our core leadership, many volunteers contribute their time and effort to this revolutionary cause. We deeply appreciate the commitment of every team member and acknowledge their invaluable contributions.
             </p>
