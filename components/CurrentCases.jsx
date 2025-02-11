@@ -21,6 +21,7 @@ export default function CurrentCases() {
          "Account1": "03196092861   (Abdul Rehman ) jazzcash",
          "Account2": "03006844332 (Muhammad Junaid Rashid) Easypaisa",
          "Account3": "00300110953386 (Abdul Rehman)  Meezan Bank Account",
+          "contact": "+923430868800"
       },
       {
 
@@ -32,13 +33,14 @@ export default function CurrentCases() {
          "Account1": "03196092861   (Abdul Rehman ) jazzcash",
          "Account2": "03006844332 (Muhammad Junaid Rashid) Easypaisa",
          "Account3": "00300110953386 (Abdul Rehman)  Meezan Bank Account",
+         "contact": "+923049790694"
 
       },
    ]
 
-   const getDocuments = (case_val)=>{
+   const getDocuments = (case_val, case_contact)=>{
       const text = 'I need documents for '+case_val;
-      const phone = '+923430868800';
+      const phone = case_contact;
       const whatsappUrl = `https://api.whatsapp.com/send?phone=${phone}&text=${text}`;
       window.open(whatsappUrl, '_blank'); // Opens WhatsApp in a new tab
    }
@@ -59,7 +61,7 @@ export default function CurrentCases() {
                      <p>Account 2: {ccase.Account2}</p>
                      <p>Account 3: {ccase.Account3}</p> <br />
                      <button onClick={()=>{
-                         getDocuments(ccase.title);
+                         getDocuments(ccase.title, ccase.contact);
                      }}>Ask for documents</button>
                     <br />
                   </div>
