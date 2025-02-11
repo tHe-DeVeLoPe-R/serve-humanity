@@ -24,7 +24,7 @@
     padding: 5%;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 25px;
     align-items: center;
     justify-content: center;
 }

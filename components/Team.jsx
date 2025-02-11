@@ -4,9 +4,14 @@ import nayab from '../public/images/nayab.png'
 import taha from '../public/images/taha.jpg'
 import anas from '../public/images/anas.png'
 import basit from '../public/images/basit.jpg'
+import { useState, useEffect } from 'react'
 
 export default function Team() {
-
+ const [isMobile, setIsMobile] = useState(false);
+    
+        useEffect(()=>{
+            setIsMobile(window.innerWidth <= 650)
+        })
     const team = [
         {
             'Name': 'Engr. Nayab Ali ',
@@ -46,7 +51,7 @@ export default function Team() {
     return (
         <div className = {style.team_main}>
             <br />
-           <h1>Our Team Leads</h1> <br />
+          {isMobile ?  <h1>Team Leads</h1> :  <h1>Our Team Leads</h1>} <br />
            <p>There are many other members in theam as well, who are working as volunteers in this revolutionary society. Below are the main team leads or heads who are acting under senior management roles. We are grateful to each member of our team and recognise their efforts as well.</p>
          <div className = {style.teams}>
          {team.map((member, index)=>{

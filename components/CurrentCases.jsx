@@ -1,6 +1,13 @@
 import React from 'react'
 import style from '../styles/CurrentCases.module.css'
+import { useState, useEffect } from 'react';
 export default function CurrentCases() {
+
+   const [isMobile, setIsMobile] = useState(false);
+       
+           useEffect(()=>{
+               setIsMobile(window.innerWidth <= 650)
+           })
 
    const cases = [
 
@@ -36,13 +43,13 @@ export default function CurrentCases() {
       window.open(whatsappUrl, '_blank'); // Opens WhatsApp in a new tab
    }
          return (
-         <div className={style.cases_main}>
+         <div className={`${isMobile ? style.mobile_cases_main : style.cases_main}`}>
             <br />
             <h1>Current Cases</h1> <br />
             <p className = {style.para}>Our team, along with dedicated volunteers, is working tirelessly to drive this revolutionary effort forward. Below are the cases that are currently active, while many others have already been successfully resolved. We appreciate the commitment of everyone involved and acknowledge their valuable contributions.</p>
-            <div className={style.cases}>
+            <div className={`${isMobile ? style.mobile_cases : style.cases}`}>
                {cases.map((ccase, index) => {
-                  return <div className={style.ccase}>
+                  return <div className={`${isMobile ? style.mobile_ccase : style.ccase}`}>
                      <h1>{ccase.title}</h1>
                      <h6>{ccase.description}</h6> <br />
                      <p className = {style.required}>Amount Required: {ccase.AmountRequired}</p>
