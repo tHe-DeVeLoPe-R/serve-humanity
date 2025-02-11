@@ -41,12 +41,12 @@ export default function Domain() {
         })
 
   return (
-    <div className = {styles.domainParent}>
+    <div className = {`${isMobile ? styles.mobile_domainParent : styles.domainParent}`}>
         <h1>Domains</h1>
         <div className = {styles.domains}>
         {
                 our_domains.map((domain , index)=>{
-                 return <div key={index} className = {styles.domain}>
+                 return <div key={index} className = {`${isMobile ? styles.mobile_domain : styles.domain}`}>
                     <img src={domain.image.src} alt="health" />
                   <h2>{domain.name}</h2>
                   <strong>Status: {domain.status}</strong>

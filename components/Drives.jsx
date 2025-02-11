@@ -33,12 +33,12 @@ export default function Drives() {
     })
 
 return (
-<div className = {styles.driveParent}>
+<div className = {`${isMobile ? styles.mobile_driveParent: styles.driveParent}`}>
     <h1>Drives</h1>
     <div className = {styles.drives}>
     {
             our_drives.map((drive , index)=>{
-             return <div key={index} className = {styles.drive}>
+             return <div key={index} className = {`${isMobile ? styles.mobile_drive : styles.drive}`}>
               <h2>{drive.name}</h2>
               <strong>Status: {drive.status}</strong>
               <p>
