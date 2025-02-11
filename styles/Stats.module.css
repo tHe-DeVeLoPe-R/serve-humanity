@@ -46,7 +46,8 @@
 }
 .stats_table{
  border: 2px solid orangered;
-
+ margin-left: 2%;
+ margin-right: 2%;
 }
  .stats_table td, .stats_table tr {
     border: 2px solid orangered;
