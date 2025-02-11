@@ -11,7 +11,7 @@ export default function Header() {
   })
   return (
     <div className={styles.headerParent}>
-      <div className={styles.headerContents}>
+      <div className={`${isMobile ? styles.mobile_headerContent : styles.headerContents}`}>
         <h1>Serve Humanity - Impacting Society</h1>
         <h3>
           "Together, we can make a difference."</h3>
