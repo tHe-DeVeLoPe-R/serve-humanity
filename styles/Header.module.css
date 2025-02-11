@@ -37,6 +37,7 @@
     font-size: 20px;
     margin-top: 2%;
     cursor: pointer;
+    color: white;
 }
 .statsButton:hover{
     background-color: orange;
@@ -50,6 +51,7 @@
     font-size: 20px;
     margin-top: 2%;
     cursor: pointer;
+    color: white;
 }
 .donationButton:hover{
     background-color: orange;
