@@ -52,7 +52,7 @@ export default function Team() {
         <div className = {style.team_main}>
             <br />
           {isMobile ?  <h1>Team Leads</h1> :  <h1>Our Team Leads</h1>} <br />
-           <p>There are many other members in theam as well, who are working as volunteers in this revolutionary society. Below are the main team leads or heads who are acting under senior management roles. We are grateful to each member of our team and recognise their efforts as well.</p>
+           <p>There are many other members in team as well, who are working as volunteers in this revolutionary society. Below are the main team leads or heads who are acting under senior management roles. We are grateful to each member of our team and recognise their efforts as well.</p>
          <div className = {style.teams}>
          {team.map((member, index)=>{
              return <div className = {style.member}>
