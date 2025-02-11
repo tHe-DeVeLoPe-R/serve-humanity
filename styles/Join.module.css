@@ -37,13 +37,13 @@
     flex-direction: column;
     align-items: center;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    padding: 10px 50px 50px 50px;
+    padding: 10px ;
 }
 .joinContent p{
     width: 60%;
 }
 .mobile_joinContent p{
-    width: 90%;
+    width: 95%;
 }
 .joinContent img{
 width: 180px;

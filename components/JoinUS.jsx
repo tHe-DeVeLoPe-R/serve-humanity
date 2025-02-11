@@ -20,7 +20,7 @@ export default function JoinUS() {
     <div className = {styles.joinMain}>
       <div className = {`${isMobile ? styles.mobile_joinContent : styles.joinContent}`}>
         <img src={logo.src} alt="logo" /> <br />
-     <p> Join Serve Humanity as a volunteer and make a meaningful impact! We assist low-income students, provide food supplies to families in need, and support individuals facing health challenges. Your time and dedication can bring hope and relief through event organization, supply distribution, and then raising awareness. Together, let’s foster kindness and create a caring society. Join us today!</p>
+     <p> Join Serve Humanity as a volunteer and make a meaningful impact! {isMobile ? null :  <p>We assist low-income students, provide food supplies to families in need, and support individuals facing health challenges.</p>} Your time and dedication can bring hope and relief through event organization, supply distribution, and then raising awareness. Together, let’s foster kindness and create a caring society. Join us today!</p>
 
       <button onClick={openWhatsApp}>Connect Our Member To Proceed</button>
       </div>
