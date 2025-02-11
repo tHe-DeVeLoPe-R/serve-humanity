@@ -12,7 +12,11 @@
     font-size: 47px;
     font-family: sans-serif;
 }
-
+.mobile_driveParent h1{
+    color: #003366;
+    font-size: 47px;
+    font-family: sans-serif;
+}
 .drives{
     margin-top: 2%;
     width: 100%;
