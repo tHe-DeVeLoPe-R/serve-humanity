@@ -57,7 +57,7 @@ height: 200px;
     border: none;
     margin-top: 20px;
     background-color: orangered;
-
+    color: white;
 }
 .mobile_joinContent button{
     padding: 10px 30px 10px 30px;
@@ -66,6 +66,7 @@ height: 200px;
     border: none;
     margin-top: 20px;
     background-color: orangered;
+    color: white;
 }
 
 .joinContent button:hover{

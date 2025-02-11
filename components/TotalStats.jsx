@@ -1,7 +1,13 @@
 import React from 'react';
 import styles from '../styles/Stats.module.css';
+import { useState, useEffect } from 'react';
 
 export default function TotalStats() {
+    const [isMobile, setIsMobile] = useState(false);
+           
+               useEffect(()=>{
+                   setIsMobile(window.innerWidth <= 650)
+               })
     const stats = {
         OverallAmountCollected: "2,225,672 rupees",
         TotalCasesSolved: "92",
@@ -12,7 +18,7 @@ export default function TotalStats() {
     };
 
     return (
-        <div className={styles.stats_main}>
+        <div className={`${isMobile ? styles.mobile_stats_main : styles.stats_main}`}>
             <br />
             <h1>Our Performance Stats</h1> <br />
             <p>
