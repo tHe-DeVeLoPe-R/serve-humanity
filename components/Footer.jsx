@@ -23,11 +23,11 @@ export default function Footer() {
             <h2 className={styles.footer_title}>Quick Links</h2>
             <ul className={styles.footer_links}>
               <li><a href="/">Home</a></li>
-              <li><a href="/custompackage">Team</a></li>
+              <li><a href="/teams">Team</a></li>
               <li><a href="/about">About Us</a></li>
               <li><a href="/contact">Contact</a></li>
-              <li><a href="/guide">Donate</a></li>
-              <li><a href="/guide">Join us</a></li>
+              <li><a href="/ccases">Donate</a></li>
+              <li><a href="/join">Join us</a></li>
             </ul>
           </div>
 
