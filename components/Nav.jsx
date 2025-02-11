@@ -1,8 +1,11 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
 import styles from '../styles/Nav.module.css'
+import { useRouter } from 'next/router';
+
 export default function Nav() {
     const [isMobile, setIsMobile] = useState(false);
+    const router = useRouter();
 
     useEffect(()=>{
         setIsMobile(window.innerWidth <= 650);
@@ -14,14 +17,14 @@ export default function Nav() {
           <h3>Inspiring Action, Transforming Communities</h3>
         </div>
         <div className = {styles.navigation}>
-            <button className = {styles.navButton}>Home</button>
-            <button className = {styles.navButton}>Projects</button>
-            <button className = {styles.navButton}>Team</button>
-            <button className = {styles.navButton}>About us</button>
-            <button className = {styles.navButton}>Donate</button>
-            <button className = {styles.navButton}>current cases</button>
-            <button className = {styles.navButton}>Join us</button>
-            <button className = {styles.navButton}>Contact us</button>
+            <button onClick={()=>router.push('/')} className = {styles.navButton}>Home</button>
+            {/* <button className = {styles.navButton}>Projects</button> */}
+            <button onClick={()=>router.push('/teams')} className  = {styles.navButton}>Team</button>
+            <button onClick={()=>router.push('/about')} className = {styles.navButton}>About us</button>
+            <button onClick={()=>router.push('/ccases')} className = {styles.navButton}>Donate</button>
+            <button onClick={()=>router.push('/ccases')} className = {styles.navButton}>current cases</button>
+            <button onClick={()=>router.push('/join')} className = {styles.navButton}>Join us</button>
+            <button onClick={()=>router.push('/contact')} className = {styles.navButton}>Contact us</button>
             
         </div>
     </div>

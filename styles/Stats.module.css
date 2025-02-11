@@ -1,0 +1,42 @@
+
+.stats_main{
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.stats_main h1{
+    color: #003366;
+}
+
+.stats_main p{
+    width: 80%;
+    text-align: center;
+    margin-bottom: 3%;
+    background: linear-gradient(90deg, rgba(246, 67, 13, 0.851), rgba(255, 255, 255, 0.783));
+    padding: 10px;
+    line-height: 1.8rem;
+    font-size: 18px;
+}
+
+.stats_table{
+ border: 2px solid orangered;
+
+}
+ .stats_table td, .stats_table tr {
+    border: 2px solid orangered;
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+}
+.stats_table th {
+    border: 2px solid orangered;
+    padding: 10px;
+    text-align: center;
+    color: #003366;
+    font-size: 33px;
+}

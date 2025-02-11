@@ -21,7 +21,7 @@ export default function Domain() {
             'desc':'We cover basic living expenses (food, clothes, bills, rents) of the needy people in this domain.',
         },
         {
-            'name':'UET Taxila cases',
+            'name':'Orphan Students fee',
             'image':uet,
             'status':'Always Open',
             'desc':'This domain is always open to cover fees expenses of the students, if any at Uet, Taxila.',
