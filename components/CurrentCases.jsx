@@ -21,7 +21,7 @@ export default function CurrentCases() {
          "Account1": "03196092861   (Abdul Rehman ) jazzcash",
          "Account2": "03006844332 (Muhammad Junaid Rashid) Easypaisa",
          "Account3": "00300110953386 (Abdul Rehman)  Meezan Bank Account",
-          "contact": "+923430868800"
+          "contact": "+923049790694"
       },
       {
 
