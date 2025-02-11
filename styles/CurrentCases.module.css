@@ -91,6 +91,16 @@
      color: white;
  }
  
+ .mobile_ccase button{
+    background-color: orangered;
+    border: none;
+    padding: 10px 25px 10px 25px;
+    font-size: 16px;
+    font-family: sans-serif;
+    cursor: pointer;
+    color: white;
+}
+
  .ccase button:hover{
      background-color: orange;
      border: none;
@@ -99,6 +109,14 @@
      font-family: sans-serif;
      cursor: pointer;
  }
+ .mobile_ccase button:hover{
+    background-color: orange;
+    border: none;
+    padding: 10px 25px 10px 25px;
+    font-size: 16px;
+    font-family: sans-serif;
+    cursor: pointer;
+}
  .collected {
     color: green;
  }

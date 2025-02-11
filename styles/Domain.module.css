@@ -9,6 +9,11 @@
     font-family: sans-serif;
 }
 
+.mobile_domainParent h1{
+    color: #003366;
+    font-size: 47px;
+    font-family: sans-serif;
+}
 .domains{
     margin-top: 2%;
     width: 100%;
