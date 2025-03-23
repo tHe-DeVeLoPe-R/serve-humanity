@@ -9,36 +9,21 @@ export default function CurrentCases() {
                setIsMobile(window.innerWidth <= 650)
            })
 
-   const cases = [
-
-      {
-
-         "title": "Fee case",
-         "description": "A student of UET Taxila is suffering from financial crisis and unable to pay his semester fee.Kindly donate for educational Cause",
-         "AmountRequired": "30k",
-         "AmountCollected": "6k",
-         "Deadline": "20 feb",
-         "Account1": "03196092861   (Abdul Rehman ) jazzcash",
-         "Account2": "03006844332 (Muhammad Junaid Rashid) Easypaisa",
-         "Account3": "00300110953386 (Abdul Rehman)  Meezan Bank Account",
-          "contact": "+923049790694"
-      },
-      {
-
-         "title": "Medical Camp case",
-         "description": "Serve Humanity in collaboration with Kaar-e-Kamal Taxila Chapter is conducting it's very first medical camp on 15th of February 2025 at Rehbar Colony. To make this Kaar e Khair successful we need your support so we humbly request everyone to participate in making this happen so we can reach out to those in need",
-         "AmountRequired": "50k",
-         "AmountCollected": "10k",
-         "Deadline": "15 feb",
-         "Account1": "03196092861   (Abdul Rehman ) jazzcash",
-         "Account2": "03006844332 (Muhammad Junaid Rashid) Easypaisa",
-         "Account3": "00300110953386 (Abdul Rehman)  Meezan Bank Account",
-         "contact": "+923049790694"
-
-      },
-   ]
-
-   const getDocuments = (case_val, case_contact)=>{
+           const cases = [
+            
+            {
+               "title": "Medical case",
+               "description": "A patient from Lahore is suffering from stage 4 Cancer and is in a critical condition. Unfortunately, they are unable to bear the expensive treatment costs. Please donate generously to support this noble cause.",
+               "AmountRequired": "50k",
+               "Deadline": "30 March",
+               "Account1": "03196092861 (Abdul Rehman) JazzCash",
+               "Account2": "03006844332 (Muhammad Junaid Rashid) Easypaisa",
+               "Account3": "00300110953386 (Abdul Rehman) Meezan Bank Account",
+               "contact": "03089431073 (Anas Naveed President)"
+            }
+         ];
+         
+ts = (case_val, case_contact)=>{
       const text = 'I need documents for '+case_val;
       const phone = case_contact;
       const whatsappUrl = `https://api.whatsapp.com/send?phone=${phone}&text=${text}`;
