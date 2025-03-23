@@ -12,6 +12,7 @@ export default function CurrentCases() {
    const cases = [
 
       {
+
          "title": "Medical case",
          "description": "A patient from Lahore is suffering from stage 4 Cancer and is in a critical condition. Unfortunately, they are unable to bear the expensive treatment costs. Please donate generously to support this noble cause. ",
          "AmountRequired": "50k",
@@ -20,7 +21,23 @@ export default function CurrentCases() {
          "Account2": "03006844332 (Muhammad Junaid Rashid) Easypaisa Account",
          "Account3": "00300110953386 (Abdul Rehman)  Meezan Bank Account",
          "contact": "03089431073 (Anas Naveed President)"
+      },
+      {
+
+         "title": "Medical Camp case",
+         "description": "Serve Humanity in collaboration with Kaar-e-Kamal Taxila Chapter is conducting it's very first medical camp on 15th of February 2025 at Rehbar Colony. To make this Kaar e Khair successful we need your support so we humbly request everyone to participate in making this happen so we can reach out to those in need",
+         "AmountRequired": "50k",
+         "AmountCollected": "10k",
+         "Deadline": "15 feb",
+         "Account1": "03196092861   (Abdul Rehman ) jazzcash",
+         "Account2": "03006844332 (Muhammad Junaid Rashid) Easypaisa",
+         "Account3": "00300110953386 (Abdul Rehman)  Meezan Bank Account",
+         "contact": "+923049790694"
+
       },]
+
+      
+
 ts = (case_val, case_contact)=>{
       const text = 'I need documents for '+case_val;
       const phone = case_contact;
