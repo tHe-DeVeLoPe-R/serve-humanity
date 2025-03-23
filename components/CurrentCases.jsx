@@ -13,7 +13,7 @@ export default function CurrentCases() {
 
       {
 
-         "title": "Medical case",
+        "title": "Medical case",
          "description": "A patient from Lahore is suffering from stage 4 Cancer and is in a critical condition. Unfortunately, they are unable to bear the expensive treatment costs. Please donate generously to support this noble cause. ",
          "AmountRequired": "50k",
          "AmountCollected": "",
@@ -35,11 +35,10 @@ export default function CurrentCases() {
          "Account3": "00300110953386 (Abdul Rehman)  Meezan Bank Account",
          "contact": "+923049790694"
 
-      },]
+      },
+   ]
 
-      
-
-ts = (case_val, case_contact)=>{
+   const getDocuments = (case_val, case_contact)=>{
       const text = 'I need documents for '+case_val;
       const phone = case_contact;
       const whatsappUrl = `https://api.whatsapp.com/send?phone=${phone}&text=${text}`;
