@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Engr. Nayab Ali",
+    "role": "Founder Serve Humanity",
+    "contact": "923430868800",
+    "image": "images/nayab.png"
+  },
+  {
+    "name": "Engr. Basit Iqbal",
+    "role": "Co-Founder Serve Humanity",
+    "contact": "923077670789",
+    "image": "images/basit.jpg"
+  },
+  {
+    "name": "Mr. Taha Yasin",
+    "role": "Co-founder Serve Humanity",
+    "contact": "923108323340",
+    "image": "images/taha.jpg"
+  },
+  {
+    "name": "Mr. Anas Naveed",
+    "role": "President Serve Humanity",
+    "contact": "923089431073",
+    "image": "images/anas.png"
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Medical/Health cases",
+    "image": "images/health.jpg",
+    "status": "Always Open",
+    "desc": "Covers any expenses related to health and medicine without any boundary."
+  },
+  {
+    "name": "Monthly ration cases",
+    "image": "images/ration.jpeg",
+    "status": "Always Open",
+    "desc": "We cover basic living expenses (food, clothes, bills, rents) of the needy people in this domain."
+  },
+  {
+    "name": "Orphan Students fee",
+    "image": "images/uet.jpeg",
+    "status": "Always Open",
+    "desc": "This domain is always open to cover fees expenses of the students, if any at UET Taxila."
+  },
+  {
+    "name": "Orphan Marriage cases",
+    "image": "images/orphan.png",
+    "status": "Always Open",
+    "desc": "This domain is all about covering the expenses of the orphan marriages as much as we can."
+  }
+]

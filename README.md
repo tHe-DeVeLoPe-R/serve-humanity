@@ -1,40 +1,58 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# Serve Humanity Welfare Website
 
-## Getting Started
+Welcome to the **Serve Humanity** website. The project has been fully migrated into a **100% clean, premium, and fully responsive static stack** using:
+* **HTML5** (semantic and SEO-friendly structures)
+* **Vanilla CSS3** (rich variables, responsive grid configurations, custom glassmorphic panels, and transitions)
+* **Vanilla JavaScript** (dynamic rendering and navigation)
+* **Bootstrap 5** (robust grids, standard navigation items, and interactive modals)
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 📁 Directory Structure
+The workspace is organized into a highly structured and modern static layout:
+
+```text
+serve-humanity/
+├── css/
+│   └── style.css          # Premium global stylesheets, animations, and typography
+├── js/
+│   └── main.js           # Page rendering script and the Dual-Mode Data Loader
+├── data/
+│   ├── cases.json        # Welfare campaigns and target cases
+│   ├── domains.json      # Primary active domains of help
+│   ├── drives.json       # Seasonal campaigns and drives
+│   ├── team.json         # Executive team members
+│   ├── stats.json        # Impact metrics log
+│   ├── projects.json     # Details of completed projects
+│   └── educate.json      # Educate Humanity requirements & leads
+├── images/               # All visual media assets & icons
+├── uploads/              # Word documents and verification files
+├── index.html            # Home page (with active modal case on load)
+├── about.html            # Organization origins and directors
+├── team.html             # Dynamic team leads contact portal
+├── cases.html            # Active campaigns page with fund progress bars
+├── projects.html         # Completed welfare activity reports
+├── stats.html            # Dynamic performance tracking dashboard
+├── educate.html          # Educate Humanity portals and child support checklist
+├── join.html             # Volunteer entry point
+└── contact.html          # Secure WhatsApp contact form
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## ⚡ Double-Click to Launch (No Servers Needed!)
+Due to our **Dual-Mode Data Loader** inside `js/main.js`, you do not need Node.js, npm, Python, or *any* local development server to run this website!
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+1. Open the folder `serve-humanity` in your file explorer.
+2. Double-click `index.html` (or any other `.html` file).
+3. The page will immediately open in your default browser and load **all dynamic data, images, and premium animations perfectly** (automatically bypassing local browser CORS restrictions!).
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🛠️ Editing Dynamic Data
+All data remains isolated in structural `.json` files in the `/data` directory:
+- To add or modify a campaign case, edit `data/cases.json`.
+- To update the team contacts, edit `data/team.json`.
+- To adjust the performance numbers, edit `data/stats.json`.
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+Changes will be automatically updated on the site!

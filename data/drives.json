@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Winter Drive",
+    "status": "Opens in Winter",
+    "desc": "In this we provide winter clothes and in this season, we are going to provide shoes or jacket to a needy student up to 8th class."
+  },
+  {
+    "name": "Ramadan Drive",
+    "status": "Always Open",
+    "desc": "Opens in the month of Ramadan, in which we manage meals for the fast of needy people."
+  },
+  {
+    "name": "Ration Drive",
+    "status": "Always Open",
+    "desc": "In this drive we provide ration to needy people to manage their day to day expenses related to basic needs."
+  },
+  {
+    "name": "Palestine Drive",
+    "status": "Always Open",
+    "desc": "In this drive we collect the donations and send them to Palestine for the help of people effected by war circumstances."
+  }
+]
